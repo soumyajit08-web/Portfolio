@@ -1,10 +1,17 @@
 import React from 'react'
 import "./Home.css"
-import man from "../../assets/man.png"
+import man from "../../assets/guru.png"
 import {Typewriter} from "react-simple-typewriter"
 import {useGSAP} from "@gsap/react"
 import gsap from 'gsap'
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 function Home() {
+  const socialLinks = {
+    github: "https://github.com/soumyajit08-web",
+    linkedin: "https://www.linkedin.com/in/soumyajit088",
+    instagram: "https://www.instagram.com/mafia_don_08?igsh=MW9tbWVscWxpZnN4Ng==",
+    whatsapp:" https://wa.me/qr/DZPSPTTW3T7ZG1 ",
+  };
   useGSAP(()=>{
   let tl1=gsap.timeline();
   tl1.from(".line1",{
@@ -55,6 +62,41 @@ const handleDownload = () => {
 
         </div>
         <button onClick={handleDownload}>HIRE ME</button>
+        <div className="social-icons">
+            <a 
+              href={socialLinks.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-icon linkedin"
+            >
+              <FaLinkedin />
+            </a>
+            <a 
+              href={socialLinks.github} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-icon github"
+            >
+              <FaGithub />
+            </a>
+            <a 
+              href={socialLinks.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-icon instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a 
+              href={socialLinks.whatsapp} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-icon whatsapp"
+            >
+              <FaWhatsapp />
+            </a>
+            
+          </div>
       </div>
       </div>  
     <div className="righthome">
