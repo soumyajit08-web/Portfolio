@@ -5,6 +5,8 @@ import va from "../../assets/va.png"
 import Quizapp from "../../assets/Quizapp.png"
 import weatherapp from "../../assets/Weatherapp.png"
 import clockapp from "../../assets/Clockapp.png"
+import video from "../../assets/video.png"
+import chat from "../../assets/chat.png"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -49,15 +51,22 @@ function Project() {
       <h1 id="para">2+ YEARS EXPERIENCED IN PROJECTS</h1>
       <div className="slider">
         <Card 
-        title="QUIZ MASTER APP" 
-        image={Quizapp} 
-        onClick={() => window.open("https://soumyajit08-web.github.io/Quiz-app/", "_blank")} />
-        <Card title="VIRTUAL ASSISTANT" 
-        image={va} 
-        onClick={() => window.open("https://soumyajit08-web.github.io/Virtual-Assistant/", "_blank")} />
+        title="ZEGO VIDEO CALL APP" 
+        image={video} 
+        onClick={() => window.open("https://zego-video-call-app.vercel.app/", "_blank")} />
         <Card title="WEATHER APP" 
         image={weatherapp} 
         onClick={() => window.open("https://soumyajit08-web.github.io/-WeatherNow/", "_blank")} />
+        <Card title="VIRTUAL ASSISTANT" 
+        image={va} 
+        onClick={() => window.open("https://soumyajit08-web.github.io/Virtual-Assistant/", "_blank")} />
+        <Card title="CHAT APP CLONE" 
+        image={chat} 
+        onClick={() => window.open("https://chat-app-phi-beryl.vercel.app/", "_blank")} />
+        <Card 
+        title="QUIZ MASTER APP" 
+        image={Quizapp} 
+        onClick={() => window.open("https://soumyajit08-web.github.io/Quiz-app/", "_blank")} />
         <Card title="INTERACTIVE CLOCK APP"
          image={clockapp}
          onClick={() => window.open("https://soumyajit08-web.github.io/ClockApp/", "_blank")} />

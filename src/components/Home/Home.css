@@ -20,7 +20,7 @@
     justify-content: center;
 }
 .righthome img{
-    width: 65%; /* increased from 60% */
+    width: 80%; /* increased from 60% */
     border-radius: 400px;
     filter: drop-shadow(2px 2px 20px rgb(116, 201,225));
 }
@@ -264,8 +264,8 @@
         align-items: end;
     }
     .righthome img{
-        max-width: 220px; /* increased from 250px */
+        max-width: 250px; /* increased from 250px */
         margin-top: 20px;
-        max-height: 220px; /* increased from 250px */
+        max-height: 250px; /* increased from 250px */
     } 
 }
