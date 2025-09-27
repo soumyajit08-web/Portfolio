@@ -4,9 +4,11 @@ import "./Project.css"
 import va from "../../assets/va.png"
 import Quizapp from "../../assets/Quizapp.png"
 import weatherapp from "../../assets/Weatherapp.png"
-import clockapp from "../../assets/Clockapp.png"
+import clock from "../../assets/clock.png"
 import video from "../../assets/video.png"
 import chat from "../../assets/chat.png"
+import portfolio from "../../assets/portfolio.png"
+import tudo from "../../assets/tudo.png"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -49,9 +51,8 @@ function Project() {
   return (
     <div id="project">
       <h1 id="para">2+ YEARS EXPERIENCED IN PROJECTS</h1>
-      <div className="slider">
-        <Card 
-        title="ZEGO VIDEO CALL APP" 
+      < div className="slider">
+        <Card title="ZEGO VIDEO CALL APP" 
         image={video} 
         onClick={() => window.open("https://zego-video-call-app.vercel.app/", "_blank")} />
         <Card title="WEATHER APP" 
@@ -67,11 +68,19 @@ function Project() {
         title="QUIZ MASTER APP" 
         image={Quizapp} 
         onClick={() => window.open("https://soumyajit08-web.github.io/Quiz-app/", "_blank")} />
+        <Card title="Latest Tudo App"
+         image={tudo}
+         onClick={() => window.open("https://soumyajit08-web.github.io/Smart-Tudo_App/", "_blank")} />
         <Card title="INTERACTIVE CLOCK APP"
-         image={clockapp}
-         onClick={() => window.open("https://soumyajit08-web.github.io/ClockApp/", "_blank")} />
+         image={clock}
+         onClick={() => window.open("https://soumyajit08-web.github.io/Time-tracker-app/", "_blank")} />
+         <Card title="INTERACTIVE PORTFOLIO"
+         image={portfolio}
+         onClick={() => window.open("https://soumya-portfolio-main.vercel.app/", "_blank")} />
+      
       </div>
-    </div>
+      </div>
+    
   )
 }
 
